@@ -18,7 +18,4 @@ def home():
 
 @app.route("/cultos")
 def cultos():
-    return render_template("cultos.html")
-
-if __name__ == "__main__":
-    app.run()
+    return render_template("cultsos.html")
