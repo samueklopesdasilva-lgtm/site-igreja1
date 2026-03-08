@@ -18,4 +18,4 @@ def home():
 
 @app.route("/cultos")
 def cultos():
-    return render_template("cultsos.html")
+    return render_template("cultos.html")
