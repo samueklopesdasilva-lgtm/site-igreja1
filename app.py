@@ -20,4 +20,8 @@ def home():
 def cultos():
     return render_template("cultos.html")
 
-app.run(host="192.168.0.25", port=5000,debug=True)
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="192.168.0.25", port=port)
